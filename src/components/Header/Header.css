@@ -1,0 +1,48 @@
+.cabecalho {
+    background-color: #60441b;
+    height: 10vh;
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 32px;
+    color: white;
+}
+
+
+.img-cabecalho {
+    display: none;
+}
+
+.img-cabecalho-on {
+    display: block;
+}
+
+.img-cabecalho-on img {
+    max-height: 4rem;
+}
+
+.conta-off {
+    display: none;
+}
+
+.conta {
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-link {
+    text-decoration: none;
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 20px;
+    color: #60441b;
+    font-weight: bold;
+}
+
+.conta:hover {
+    transform: scale(1.1);
+}

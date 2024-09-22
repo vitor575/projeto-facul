@@ -1,0 +1,15 @@
+.rodape {
+    background-color: #60441b;
+    height: 8vh;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:  "Poppins", sans-serif ;
+    border: 2px solid rgb(59, 34, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
