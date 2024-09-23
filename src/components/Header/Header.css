@@ -25,10 +25,6 @@
     max-height: 4rem;
 }
 
-.conta-off {
-    display: none;
-}
-
 .conta {
     display: block;
     transition: all 0.3s ease-in-out;
@@ -45,4 +41,34 @@
 
 .conta:hover {
     transform: scale(1.1);
+}
+
+.cart__button {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart__status {
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

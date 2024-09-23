@@ -3,6 +3,7 @@ import Inicio from "./views/Inicio";
 import Header from "./components/Header"
 import Footer from "./components/Footer";
 import Menu from "./views/Menu";
+import Cardapio from "./views/Cardapio";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio/>}/>
         <Route path="/menu" element={<Menu/>}/>
-        <Route path="/cardapio" element={<Menu/>}/>
+        <Route path="/cardapio" element={<Cardapio/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

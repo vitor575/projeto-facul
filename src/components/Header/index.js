@@ -1,20 +1,24 @@
 import "./Header.css";
 import logo from "../../img/Dev_res.png"
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { CiShoppingCart } from "react-icons/ci";
 
 const Header = () => {
     const local = useLocation();
 
-    return(
+    return (
         <header className="cabecalho">
             <div className={`${local.pathname === "/" ? "img-cabecalho" : "img-cabecalho-on"}`}>
-                <img src={logo} alt="logo dev-res"/>
+                <img src={logo} alt="logo dev-res" />
             </div>
             <div>
                 <h1 className="titulo">{`${local.pathname === "/" ? "Bem-vindo" : ""}`}</h1>
             </div>
-            <div className={`${local.pathname === "/" ? "conta-off" : "conta"}`}>
-                <Link className="header-link" to="/fecharConta" >Fechar conta</Link>
+            <div>
+                <button className="cart__button">
+                    <CiShoppingCart />
+                    <span className="cart__status">1</span>
+                </button>
             </div>
         </header>
     )
