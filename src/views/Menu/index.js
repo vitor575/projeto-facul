@@ -13,7 +13,7 @@ const Menu = () => {
                     </Link>
                 </div>
                 <div>
-                    <Link to="/cardapio">
+                    <Link to="/lacarte">
                         <img className="menu-img" src={laCarte} alt="à la carte"/>
                     </Link>
                 </div>
