@@ -1,6 +1,7 @@
 import "./CardapioTela.css";
 import Navegacao from "../Navegacao";
 import Card from "../Cards";
+import formatCurrency from "../../utils/formatCurrency";
 
 
 const CardapioTela = ({pratos}) => {
@@ -17,11 +18,7 @@ const CardapioTela = ({pratos}) => {
             </ul>
         </nav>
         <section className="menu">
-                {pratos.map((prato) => <Card id={prato.id} preco={prato.preco.toLocaleString('pt-br', {
-                    style: 'currency',
-                    currency: 'BRL',
-                })
-                } img={prato.imagem}>{prato.nome}</Card>)}
+                {pratos.map((prato) => <Card id={prato.id} preco={prato.preco} img={prato.imagem}>{prato.nome}</Card>)}
         </section>
     </main >
     )
