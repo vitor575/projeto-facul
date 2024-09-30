@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Inicio from "./views/Inicio";
 import Header from "./components/Header"
-import Footer from "./components/Footer";
 import Menu from "./views/Menu";
 import Cart from "./components/Cart";
 import Provider from "./context/Provider";
@@ -26,7 +25,6 @@ function App() {
           <Route path="/bebidas" element={<Bebidas />} />
           <Route path="/sobremesas" element={<Sobremesas />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </Provider>
   );

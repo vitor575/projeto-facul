@@ -8,6 +8,10 @@
     height: 3.5rem;
 }
 
+.cart__item:last-child {
+    border-bottom: none;
+}
+
 .cart__item__img {
     width: 70px;
 }

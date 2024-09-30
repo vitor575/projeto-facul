@@ -1,5 +1,5 @@
 .menu-items {
-    display: flex;
+    display: flex; 
     justify-content: center;
     padding-top: 10rem;
     gap: 10rem;

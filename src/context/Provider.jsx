@@ -4,11 +4,14 @@ import AppContext from "./AppContext";
 const Provider = ({ children }) => {
   // Inicializando o estado com um array vazio
   const [cartItems, setCartItems] = useState([]);
+  const [cartVisible, setCartVisible] = useState(false);
   
   // Criando o valor a ser fornecido pelo contexto
   const value = {
     cartItems,
-    setCartItems
+    setCartItems,
+    cartVisible,
+    setCartVisible
   };
 
   return (

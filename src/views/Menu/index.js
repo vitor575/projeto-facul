@@ -18,7 +18,9 @@ const Menu = () => {
                     </Link>
                 </div>
             </section>
+              
         </main>
+        
     )
 };
 

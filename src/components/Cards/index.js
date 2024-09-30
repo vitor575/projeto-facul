@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import "./Cards.css";
 import AppContext from "../../context/AppContext";
+import formatCurrency from "../../utils/formatCurrency";
 
 const Card = ( props ) => {
 
@@ -19,7 +20,7 @@ const Card = ( props ) => {
             </div>
             <div className="card-titulo">
                 <h3>{children}</h3>
-                <p>{preco}</p>
+                <p>{formatCurrency(preco)}</p>
                 <button 
                 className="btn"
                 onClick={ handleAddCart }

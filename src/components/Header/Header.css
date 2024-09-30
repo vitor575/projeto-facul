@@ -1,4 +1,9 @@
 .cabecalho {
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
     background-color: #60441b;
     height: 10vh;
     border-radius: 0 0 8px 8px;
