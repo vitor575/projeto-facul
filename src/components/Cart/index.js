@@ -11,7 +11,6 @@ const Cart = () => {
         return item.preco + acc
     }, 0);  
 
-
     return (
         <section className={`cart ${cartVisible ? "cart__active" : ""}`}>
             <div className="cart-items">

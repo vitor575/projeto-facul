@@ -4,7 +4,6 @@ import formatCurrency from "../../utils/formatCurrency";
 import AppContext from "../../context/AppContext";
 import { useContext } from "react";
 
-
 const CartItem = (props) => {
     const { cartItems, setCartItems } = useContext(AppContext);
     
